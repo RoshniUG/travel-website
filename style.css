@@ -1,0 +1,124 @@
+body{
+    font-family:'Poppins'sans-serif;
+    background:#fff
+}
+.slider-container{
+    width:100%;
+    height:900px;
+    overflow:hidden;
+}
+.slider-wrapper{
+    display:flex;
+    width:200%;
+    transition:transform 0.5s ease-in-out;
+}
+.slider-slide{
+    /*flex:0 0 50%;*/
+    position:relative;
+}
+.slider-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.text-overlay{
+    position:absolute;
+    width:100%;
+    background:rgba(0,0,0,0.5);
+
+    color:white;
+    padding:10px;
+    box-sizing:border-box;
+    text-align: center;
+    top:20%;
+    font-size: 50px;
+    transform:translateY(-50%);
+}
+.navbar{
+    position:static;
+    width: 100%;
+    background:rgba(0,0,0,0.5);
+
+    color:white;
+    padding:10px;
+    box-sizing:border-box;
+    text-align:center;
+    top:0;
+    font-size:27px;
+}
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+.slider-arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:printer;
+    font-size:24px;
+    color:white;
+    background-color:black;
+    padding:10px;
+    border:none;
+    z-index:1;
+}
+.prev{
+    left:0;
+}
+.next{
+    right:0;
+}
+
+.packages .box-container .box{
+    border: 2px solid black;
+    box-shadow: var(--box-shadow);
+    background: rgb(225 ,222, 222);
+    cursor: pointer;
+}
+
+.packages .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:2rem;
+
+}
+
+.packages .box-container .box:hover .image img{
+    transform: scale(1.5);
+}
+
+.packages .box-container .box .image{
+    height: 20rem;
+    overflow: hidden;
+}
+
+.packages .box-container  .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+}
+.pacakages.box-container.box.content{
+    padding:2rem;
+    text-align:center;
+}
+.pacakages.box-container.box.contenth3{
+    font-size:2.5rem;
+    color:black;
+}
+.pacakages.box-container.box.content p{
+    font-size:20px;
+    color:grey;
+    line-height:1.5;
+    padding:1rem 0;
+}
+.btn{
+    font-size:25px;
+    padding:5px;
+    background-color:black;
+    color:white;
+}
+a{
+    text-decoration:none;
+}
